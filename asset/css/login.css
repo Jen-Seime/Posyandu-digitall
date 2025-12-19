@@ -1,0 +1,85 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins',sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #A5D6A7, #4CAF50);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333333;
+    }
+
+    .login-box {
+        background-color: #FFFFFF;
+        width: 100%;
+        max-width: 380px;
+        padding: 35px 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15) ;
+    }
+
+    .login-box h2 {
+        text-align: center;
+        color: #2E7D32 ;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    .login-box p {
+        text-align: center;
+        font-size: 13px;
+        margin-bottom: 25px;
+        color: #666666;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .form-group input {
+        width: 100px;
+        padding: 11px 12px;
+        border-radius: 6px;
+        border: 1px solid #CCCCCC;
+        font-size: 14px;
+    }
+
+    .form-group input:focus {
+        outline: none;
+        border-color: #4CAF50;
+    }
+
+    .btn-login {
+        width: 100%;
+        background-color: #4CAF50;
+        border: none;
+        color: #FFFFFF;
+        padding: 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .btn-login :hover {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .extra a:hover{
+        text-decoration: underline;
+    }

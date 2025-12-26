@@ -1,65 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posyandu Digital</title>
+    <title>Posyandu Digital - Sehat Bersama</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="asset/css/app.css">
     <link rel="stylesheet" href="asset/css/home.css">
-
-    
-
 </head>
 <body>
-    <div id="loader">
-        <div class="loader-circle"></div>
-    </div>
 
     <nav>
-        <h1>Posyandu Digital</h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#jadwal">Jadwal Imunisasi</a></li>
-            <li><a href="#artikel">Artikel</a></li>
-            <li><a href="#kontak">Kontak</a></li>
+        <div class="logo">
+            <i class="fas fa-leaf"></i> Posyandu Digital
+        </div>
+        <ul class="nav-links">
+            <li class="active"><a  href="/index.html">Beranda</a></li>
+            <li><a href="/pages/informasi-kesehatan/ibu-hamil.html">Informasi Kesehatan</a></li>
+            <li><a href="/pages/jadwal_imunisasi.html">Jadwal Imunisasi</a></li>
+            <li><a href="/pages/artikel.html">Artikel</a></li>
+            <li><a href="/pages/kontak.html">Kontak</a></li>
+            <li><a href="/pages/about.html">About</a></li>
         </ul>
+        <!-- <a href="#" class="btn-login">Login</a> -->
+        
+        <div class="moble">
+            <a href="">
+                <img class="foto" src="/asset/img/home2.png" alt="">
+            </a>
+
+            <label id="checkbtn" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+         
+         
     </nav>
 
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <h2>Informasi Kesehatan Ibu & Anak</h2>
-        <p>Pantau tumbuh kembang anak, jadwal imunisasi, dan artikel kesehatan terpercaya.</p>
-        <a href="jadwalImunisasi.html">
-            <button  onclick="scrollToSection('jadwal')">Lihat Jadwal Imunisasi</button>
-        </a>
-        
-    </section>
-
-    <!-- Content -->
-    <section class="content">
-        <div class="card" id="jadwal">
-            <h3>Jadwal Posyandu</h3>
-            <p>Lihat jadwal imunisasi dan kegiatan posyandu terdekat.</p>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Posyandu Digital</h1>
+            <p>Memantau tumbuh kembang si buah hati dan kesehatan ibu kini lebih mudah dalam satu genggaman.</p>
+            <div class="hero-btns">
+                <a href="/pages/jadwal_imunisasi.html" class="btn-main">Jadwal Imunisasi</a>
+                <a href="/pages/artikel.html" class="btn-outline">Baca Artikel</a>
+            </div>
         </div>
-
-        <div class="card" id="artikel">
-            <h3>Artikel Kesehatan</h3>
-            <p>Baca artikel seputar kesehatan ibu hamil dan balita.</p>
-        </div>
-
-        <div class="card" id="data">
-            <h3>Data Balita</h3>
-            <p>Lihat data dan perkembangan balita Anda secara berkala.</p>
+        <div class="hero-image">
+            <img src="/asset/img/home/Dr__Roman-removebg-preview.png" alt="Kesehatan">
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="kontak">
-        © 2025 Posyandu Digital | Layanan Informasi Kesehatan
+    <section class="services">
+        <h2>Layanan Utama Kami</h2>
+        <div class="card-container">
+            <div class="card">
+                <i class="fas fa-user-nurse"></i>
+                <h3>Info Kesehatan Ibu</h3>
+                <p>Panduan lengkap kesehatan masa kehamilan hingga menyusui.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-baby"></i>
+                <h3>Info Kesehatan Anak</h3>
+                <p>Tips nutrisi dan pola asuh anak usia 0-5 tahun.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Jadwal Imunisasi</h3>
+                <p>Cek jadwal imunisasi rutin sesuai umur anak Anda.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-book-medical"></i>
+                <h3>Artikel Edukasi</h3>
+                <p>Kumpulan berita dan informasi medis terpercaya.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Posyandu Digital. Mari Wujudkan Generasi Sehat.</p>
     </footer>
 
-    <!-- JavaScript -->
-    
+    <script src="/asset/js/bar.js"></script>
 
 </body>
-</html>  
+</html>

@@ -1,56 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artikel Kesehatan - Posyandu Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../asset/css/artikel.css">
     <link rel="stylesheet" href="../asset/css/app.css">
-    
 </head>
 <body>
-    <!-- Navbar -->
-     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Jadwal Imunisasi</a></li>
-            <li><a href="#" class="active">Artikel</a></li>
-            <li><a href="#">Kontak</a></li>
+
+    <nav>
+        <div class="logo">
+            <i class="fas fa-leaf"></i> Posyandu Digital
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="informasi-kesehatan/ibu-hamil.html">Informasi Kesehatan</a></li>
+            <li><a href="jadwal_imunisasi.html">Jadwal Imunisasi</a></li>
+            <li><a href="artikel.html" style="color: #40916c;">Artikel</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
-     </nav>
+        
+        <div class="moble">
+            <a href="">
+                <img class="foto" src="/asset/img/home2.png" alt="">
+            </a>
 
-     <!-- header -->
-      <section class="header">
-        <h2>Artikel Kesehatan</h2>
-        <p>Informasi Kesehatan ibu dan anak yang bermanfaat</p>
-      </section>
+            <label id="checkbtn" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+    </nav>
 
-     <!-- Articles -->
-      <section class="container">
-        <div class="articles-card">
-            <h3>Pentingnya Gizi Seimbang untuk Balita</h3>
-            <span>Diposting oleh Bidan Desa 10 Januari 2025</span>
-            <p>Gizi seimbang sangat penting untuk pertumbuhan dan perkembangan balita agar terhindar dari stunting dan...</p>
-            <a href="#">Baca Selengkapnya</a>
+    <header class="article-header">
+        <h1>Artikel Kesehatan</h1>
+        <div class="search-container">
+            <input type="text" placeholder="Cari topik kesehatan (misal: Gizi, Stunting, ASI)...">
+            <i class="fas fa-search"></i>
         </div>
-        <div class="article-card">
-            <h3>Manfaat imunisasi bagi Anak</h3>
-            <span>Diposting oleh  Petugas Kesehatan 8 Januari 2025</span>
-            <p>Imunisasi membantu melindungi  anak  dari berbagai penyakit berbahaya dan menular sejak dini...</p>
-            <a href="#">Baca Selengkapnya</a>
-        </div>
+    </header>
 
-        <div class="article-card">
-            <h3>Cara Mencehag Stunting Sejak Dini</h3>
-            <span>Diposting Oleh Puskesmas 5 Januari 2025</span>
-            <P>Stunting dapat dicegah dengan pemenuhan gizi yang baik sejak masa kehamilan hingga balita...</P>
-            <a href="#">Baca Selengkapnya</a>
-        </div>
-    </section>
-    <!-- footer -->
-     <footer>
-         © 2025 Posyandu Digital | Artikel Kesehatan
-     </footer>
+    <div class="filter-section">
+        <span class="category-chip active">Semua</span>
+        <span class="category-chip">Nutrisi</span>
+        <span class="category-chip">Kehamilan</span>
+        <span class="category-chip">Tumbuh Kembang</span>
+        <span class="category-chip">Berita Posyandu</span>
+    </div>
+
+    <main class="article-grid">
+        <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80" alt="Nutrisi" class="article-img">
+            <div class="article-content">
+                <h3>Pilihan Superfood untuk Ibu Menyusui agar ASI Lancar</h3>
+                <p>Nutrisi yang tepat sangat berpengaruh pada kualitas dan kuantitas ASI. Pelajari daftar makanan pelancar ASI alami di sini.</p>
+                <a href="#" class="btn-read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1590105577767-e21a1067899f?auto=format&fit=crop&w=400&q=80" alt="Balita" class="article-img">
+            <div class="article-content">
+                <h3>Mengenali Gejala Stunting pada Anak Sejak Dini</h3>
+                <p>Ciri-ciri fisik dan kognitif yang perlu diwaspadai orang tua untuk mencegah stunting pada periode emas anak.</p>
+                <a href="#" class="btn-read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?auto=format&fit=crop&w=400&q=80" alt="Vaksin" class="article-img">
+            <div class="article-content">
+                <h3>Mitos vs Fakta Seputar Imunisasi Dasar</h3>
+                <p>Masih ragu dengan efek samping imunisasi? Mari bedah fakta medis di balik isu-isu yang beredar di masyarakat.</p>
+                <a href="#" class="btn-read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </article>
+    </main>
+
+     <script src="/asset/js/bar.js"></script>
 
 </body>
 </html>

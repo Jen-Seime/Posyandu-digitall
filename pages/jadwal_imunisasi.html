@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Imunisasi - Posyandu Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../asset/css/jadwal_uminisasi.css">
+    <link rel="stylesheet" href="../asset/css/app.css">
+    
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <i class="fas fa-leaf"></i> Posyandu Digital
+        </div>
+       <ul class="nav-links">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="informasi-kesehatan/ibu-hamil.html">Informasi Kesehatan</a></li>
+            <li><a href="jadwal_imunisasi.html" style="color: #40916c;">Jadwal Imunisasi</a></li>
+            <li><a href="artikel.html">Artikel</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+         
+        <div class="moble">
+            <a href="">
+                <img class="foto" src="/asset/img/home2.png" alt="">
+            </a>
+
+            <label id="checkbtn" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+    </nav>
+
+    <header class="header-section">
+        <h1>Jadwal Imunisasi Rutin</h1>
+        <p>Pastikan buah hati mendapatkan perlindungan tepat waktu.</p>
+    </header>
+
+    <div class="container">
+        
+
+        <section class="filter-card">
+            <div class="filter-group">
+                <label for="usia">Pilih Usia Anak</label>
+                <select id="usia">
+                    <option value="">Semua Usia</option>
+                    <option value="0">0 Bulan</option>
+                    <option value="1">1 Bulan</option>
+                    <option value="2">2 Bulan</option>
+                    <option value="9">9 Bulan</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="jenis">Jenis Imunisasi</label>
+                <select id="jenis">
+                    <option value="">Semua Jenis</option>
+                    <option value="wajib">Wajib Dasar</option>
+                    <option value="tambahan">Tambahan</option>
+                </select>
+            </div>
+            <button class="btn-filter"><i class="fas fa-search"></i> Cari</button>
+        </section>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Imunisasi</th>
+                        <th>Usia Anak</th>
+                        <th> Tanggal</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Nama Imunisasi"><strong>Hepatitis B (HB-0)</strong></td>
+                        <td data-label="Usia Anak"><span class="badge-age">0 - 24 Jam</span></td>
+                        <td data-label="Tanggal">Sesuai Kelahiran</td>
+                        <td data-label="Keterangan" class="status-info">Mencegah penularan Hepatitis B dari ibu.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Nama Imunisasi"><strong>BCG & Polio 1</strong></td>
+                        <td data-label="Usia Anak"><span class="badge-age">1 Bulan</span></td>
+                        <td data-label="Tanggal">Januari 2024</td>
+                        <td data-label="Keterangan" class="status-info">Mencegah TBC dan lumpuh layu.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Nama Imunisasi"><strong>DPT-HB-Hib 1 & Polio 2</strong></td>
+                        <td data-label="Usia Anak"><span class="badge-age">2 Bulan</span></td>
+                        <td data-label="Tanggal">Februari 2024</td>
+                        <td data-label="Keterangan" class="status-info">Mencegah Difteri, Pertusis, Tetanus.</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Nama Imunisasi"><strong>Campak - Rubella</strong></td>
+                        <td data-label="Usia Anak"><span class="badge-age">9 Bulan</span></td>
+                        <td data-label="Tanggal">September 2024</td>
+                        <td data-label="Keterangan" class="status-info">Mencegah penyakit Campak & Rubella.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
